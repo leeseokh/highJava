@@ -1,0 +1,12 @@
+127.0.0.1 - - [03/Jun/2021:17:37:44 +0900] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [03/Jun/2021:17:37:58 +0900] "GET /ServletTest/T02_ServletTest?name=%ED%99%8D%EA%B8%B8%EB%8F%99 HTTP/1.1" 200 104
+0:0:0:0:0:0:0:1 - - [03/Jun/2021:17:38:02 +0900] "GET /ServletTest/T02_ServletTest HTTP/1.1" 200 90
+0:0:0:0:0:0:0:1 - - [03/Jun/2021:17:38:03 +0900] "GET /ServletTest/T02_ServletTest HTTP/1.1" 200 90
+0:0:0:0:0:0:0:1 - - [03/Jun/2021:17:47:51 +0900] "GET /ServletTest/member/list HTTP/1.1" 200 581
+0:0:0:0:0:0:0:1 - - [03/Jun/2021:17:47:53 +0900] "GET /ServletTest/member/insert.do HTTP/1.1" 404 103
+0:0:0:0:0:0:0:1 - - [03/Jun/2021:17:48:08 +0900] "GET /ServletTest/member/list HTTP/1.1" 200 581
+0:0:0:0:0:0:0:1 - - [03/Jun/2021:17:48:13 +0900] "GET /ServletTest/member/list HTTP/1.1" 200 581
+0:0:0:0:0:0:0:1 - - [03/Jun/2021:17:48:14 +0900] "GET /ServletTest/member/insert.do HTTP/1.1" 404 103
+0:0:0:0:0:0:0:1 - - [03/Jun/2021:17:49:22 +0900] "GET /ServletTest/member/list HTTP/1.1" 200 581
+0:0:0:0:0:0:0:1 - - [03/Jun/2021:17:49:33 +0900] "GET /ServletTest/member/list.jsp HTTP/1.1" 500 2821
+0:0:0:0:0:0:0:1 - - [03/Jun/2021:18:00:42 +0900] "GET /ServletTest/T03_ServletParameterTest HTTP/1.1" 200 143

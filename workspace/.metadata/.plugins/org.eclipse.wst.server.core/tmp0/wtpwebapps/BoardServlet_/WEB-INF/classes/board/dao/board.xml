@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="board">
+
+ 	<!-- insert -->
+	<insert id="insertBoard" parameterClass="vo.BoardVO">
+		insert into board
+		(board_no, board_title, board_writer, board_date, board_content)
+		values (#boardNo#, #boardTitle#, #boardWriter#, #boardDate#, #boardContent#)
+	</insert> 
+	
+	<!-- update -->
+	<update id="updateBoard"> 
+		update board 
+		set board_title = #boardTitle# 
+		,board_writer = #boardWriter# 
+		,board_date = #boardDate# 
+		,board_content = #boardContent# 
+ 		where board_no = #boardNo# 
+	</update>
+	
+	<delete id="deleteBoard">
+		delete from  where board_no = #boardNo# 
+	</delete>
+	
+	
+	<resultMap class="vo.BoardVo" id="boardMap">
+		<result property="boardNo" column="board_no"/>
+		<result property="boardTitle" column="board_title"/>
+		<result property="boardWriter" column="board_writer"/>
+		<result property="boardDate" column="board_date"/>
+		<result property="boardContent" column="board_content"/>
+	</resultMap>
+	
+	<select id="getBoardAll" resultMap="boardMap">
+		select board_no			
+			  ,board_title
+			  ,board_writer
+			  ,board_date
+			  ,board_content
+		from board 
+	</select>
+	
+	<select id="checkBoard" resultMap="boardMap">
+		select count(*) as cnt from board where board_no = #boardNo#
+	</select>
+	
+	<select id="getBoard" resultMap="boardMap">
+		select * from board where board_no = #boardNo#
+	</select>
+	
+	
+	<select id="getSearchBoard" parameterClass="vo.BoardVO" resultMap="boardMap">
+			select * from board where 1=1
+			<isNotEmpty property="boardNo">		
+			and board_no = #boardNo#
+			</isNotEmpty>
+			<isNotEmpty property="boardTitle">
+			and board_title = #boardTitle# 
+			</isNotEmpty>
+			<isNotEmpty property="boardWriter">
+			and board_writer = #boardWriter#
+			</isNotEmpty>
+			<isNotEmpty property="boardDate">
+			and board_date = #boardDate#
+			</isNotEmpty>
+			<isNotEmpty property="boardContent">
+			and board_content like '%' || #boardContent# || '%' 
+			</isNotEmpty>
+		
+	
+	</select>
+	
+	
+</sqlMap>			
+
+
+
+
+

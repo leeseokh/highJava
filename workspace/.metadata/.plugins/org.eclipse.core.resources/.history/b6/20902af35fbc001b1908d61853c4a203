@@ -1,0 +1,40 @@
+package kr.or.ddit.basic;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+public class MultiChatServer {
+
+	//대화명, 클라이언트의  Socket을 저장하기 위한 Map 변수 선언
+	Map<String, Socket> clients;
+	
+	public MultiChatServer() {
+		//동기화 처리가 가능하도록 Map객체 생성
+		clients = Collections.synchronizedMap(new HashMap<String, Socket>());
+	}
+	
+	//시작 메서드
+	public void serverStart() {
+		Socket socket = null;
+		
+		try(ServerSocket serverSocket = new ServerSocket(7777)){
+			System.out.println("서버가 시작되었습니다.");
+			
+			while(true) {
+				//클라이언트의 접속을 대기한다.
+				socket = serverSocket.accept();
+				
+				System.out.println("[" + socket.getInetAddress() 
+								+" : " + socket.getPort()
+								+"] 에서 접속하였습니다.");
+				//메시지 전송 처리를 하는 스레드 생성 및 실행
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,17 @@
+1623831196089	Rename type 'Register'
+1623981036529	Rename type 'RegisterDao'
+1623981454255	Move compilation unit
+1623981459453	Rename type 'IdFindDao'
+1623982480512	Rename type 'IdfindMemberHandler'
+1623982519812	Move compilation unit
+1623982544333	Move compilation unit
+1623982917143	Delete element
+1623985794698	Rename resource 'id'
+1623985799697	Rename resource 'id_pwSerach'
+1623985805795	Rename resource 'id_pwSearch'
+1623985820945	Move 3 resources to 'search'
+1623991639353	Delete element
+1623991660191	Delete element
+1623992080498	Delete element
+1623992621749	Delete element
+1623992625798	Rename resource 'searchIdd.jsp'

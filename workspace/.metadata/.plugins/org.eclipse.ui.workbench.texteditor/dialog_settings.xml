@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="BoardVO" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="boardVO"/>
+			<item value="boardVP"/>
+			<item value="boardVo"/>
+			<item value="atchfile"/>
+			<item value="atch"/>
+			<item value="at"/>
+			<item value="atchF"/>
+			<item value="vo"/>
+			<item value="null"/>
+			<item value="jsp"/>
+			<item value="string"/>
+			<item value="int&apos;"/>
+			<item value="int"/>
+			<item value="f"/>
+			<item value="check"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+			<item value="boardTitle"/>
+			<item value="boardWriter"/>
+			<item value="boardContent"/>
+			<item value="socket"/>
+			<item value="bv"/>
+			<item value="boardno"/>
+			<item value="getSearchBoard"/>
+			<item value="boardList"/>
+			<item value="boardService"/>
+			<item value="BoradDaoImpl"/>
+			<item value="boardDao"/>
+			<item value="boardNo"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="288" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="311" key="DIALOG_HEIGHT"/>
+		<item value="1086" key="DIALOG_X_ORIGIN"/>
+		<item value="188" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>
